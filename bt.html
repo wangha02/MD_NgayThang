@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p>Tính số ngày</p>
+
+<input id="thang"><br><br>
+
+<button id="check" onclick="check()">Tính số ngày</button>
+<br><br>
+
+<p id="ketqua" style="border: 1px solid black; border-radius: 8px; width: 300px; padding: 5px">Result: </p>
+
+<script>
+    function check() {
+        let input =  +document.getElementById("thang").value;
+        switch (input) {
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                document.getElementById("ketqua").innerText = "ketqua: thang" + input + "có 30 ngày";
+                break;
+            case 2:
+                document.getElementById("ketqua").innerText = "ketqua: thang" + input + "có 28 hoặc 29 ngày";
+                break;
+            default:
+                document.getElementById("ketqua").innerText = "ketqua: thang" + input + "có 31 ngày";
+        }
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
